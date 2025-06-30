@@ -104,8 +104,9 @@ export default function HomePage() {
             {mode === 'lcg' && (
                 <div className="card">
                     <h2>Browse the &quot;Full Scale&quot; Library</h2>
-                    <blockquote>&quot;By this art you may contemplate the variation of the 23 letters...&quot;
-                        <cite>&mdash; Jorge Luis Borges, &quot;The Library of Babel&quot;</cite>
+                    <blockquote className="quote-block">
+                        <p>&quot;The distribution of the galleries is invariable. Twenty shelves, five long shelves per side, cover all the sides except two. Their height, which is the distance from floor to ceiling, is scarcely greater than that of a normal librarian. One of the free sides leads to a narrow hallway which opens upon another gallery, identical to the first and to all the rest.&quot;</p>
+                        <cite>— Jorge Luis Borges, &quot;The Library of Babel&quot;</cite>
                     </blockquote>
                     <div className="form-grid">
                         <div className="form-group"><label htmlFor="hex">Hexagon</label><input id="hex" name="hex" value={address.hex} onChange={(e) => setAddress({...address, hex: e.target.value})} placeholder="e.g., a1b2c3d4..." /></div>
