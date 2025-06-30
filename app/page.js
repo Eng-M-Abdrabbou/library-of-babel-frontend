@@ -4,7 +4,6 @@ import React, { useState, useCallback, useEffect } from 'react';
 const API_BASE_URL = 'http://localhost:3001';
 
 export default function HomePage() {
-    // ... (All the state hooks like useState, etc. remain exactly the same)
     const [mode, setMode] = useState('lcg');
     const [address, setAddress] = useState({ hex: '0', wall: '1', shelf: '1', book: '1' });
     const [page, setPage] = useState('1');
@@ -15,7 +14,6 @@ export default function HomePage() {
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResult, setSearchResult] = useState(null);
 
-    // ... (All the functions like fetchContent, handleGo, handleSearch remain exactly the same)
     const fetchContent = useCallback(async (currentMode, currentAddress, currentPage, currentPageId) => {
         setIsLoading(true);
         setError('');
@@ -103,7 +101,6 @@ export default function HomePage() {
                 </details>
             </div>
 
-            {/* ... (The rest of the file remains exactly the same) ... */}
             {mode === 'lcg' && (
                 <div className="card">
                     <h2>Browse the Full Scale Library</h2>

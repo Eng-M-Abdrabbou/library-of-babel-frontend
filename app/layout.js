@@ -1,9 +1,7 @@
-// babel-nextjs-frontend/app/layout.js
 import Link from 'next/link';
 import './globals.css';
 import { EB_Garamond, Inter } from 'next/font/google';
 
-// Fonts for a classic and clean look
 const garamond = EB_Garamond({ subsets: ['latin'], variable: '--font-garamond' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
