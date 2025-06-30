@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useCallback, useEffect } from 'react';
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://library-of-babel-backend.onrender.com';
 
 export default function HomePage() {
     const [mode, setMode] = useState('lcg');
